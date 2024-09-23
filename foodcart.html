@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="foodcart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.3/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="iconn">
+            <ion-icon name="logo-tux" class="penguin"></ion-icon>
+        </div>
+
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="today-outline"></ion-icon>Dashboard</a>
+            <a href="#"><ion-icon name="cart"></ion-icon>Sales</a>
+            <a href="#"><ion-icon name="reorder-four"></ion-icon>Orders</a>
+            <a href="#"><ion-icon name="people"></ion-icon>Customer</a>
+            <a href="#"><ion-icon name="pricetags"></ion-icon>Items</a>
+            <a href="#"><ion-icon name="file-tray-stacked"></ion-icon>Inventory</a>
+            <a href="#"><ion-icon name="alert-circle"></ion-icon>Alert</a>
+        </div>
+        <img src="images-removebg-preview.png" alt="">
+    </div>
+    <div class="blue-box"></div>
+    <div class="cart">       
+        <div class="book">
+            <ion-icon name="book-outline"></ion-icon>
+        </div>
+        <div class="cart">
+            <div class="search">
+                <ion-icon name="search-outline"></ion-icon>
+                <h3>Search</h3>
+            </div>
+            <div class="cart-summary">
+                <div class="cart-header">
+                    <div class="cart-header-title">
+                        <h2>Cart summary</h2>
+                        <p class="order-id">Order ID: <span>000001</span></p>
+                    </div>
+                    <div class="icon-container">
+                        <ion-icon name="book-outline"></ion-icon>
+                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                </div>
+        
+                <div class="cart-items">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                                <th>Amount SAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="icons"><ion-icon name="cart-outline"></ion-icon></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="empty-cart">Cart is empty</td>
+                            </tr>
+                            <tr></tr>
+                                <td colspan="2" class="cart-footer">Scan barcode or add items from catalog</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="blue-bottom-box hidden">
+            <span class="items-count">0 Items</span>
+            <span class="total-count">Total SAR 0.00</span>
+        </div>
+    </div>
+    <div class="payment">
+        <div class="payment-content">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Payment Summary</td> <td>Ashwin</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Sub total</td>
+                      <td>SAR 0.00</td>
+                  </tr>
+                  <tr>
+                      <td>Taxable amount</td> 
+                      <td>SAR 0.00</td>
+                  </tr>
+                  <tr>
+                      <td>Total tax</td>
+                      <td>SAR 0.00</td>
+                  </tr>
+              </tbody>
+               <tfoot>
+                  <tr>
+                      <td>Grand total</td>
+                      <td><span>SAR 0.00</span></td>
+                  </tr>
+               </tfoot>
+           </table>
+           <div class="notes">
+                <i class='bx bx-notepad'></i>
+                 <p>Add Notes</p>
+           </div>
+           <div class="fonticons">
+             <table>
+                 <tr class="flex-row">
+                     <td><i class="fa-solid fa-user"></i>Customer</td>
+                     <td><i class="fa-solid fa-receipt"></i>Coupon</td> 
+                     <td><i class="fa-solid fa-percent"></i>Discount</td>
+                 </tr>
+             </table>
+            </div>
+        </div>
+    </div>
+    <table>
+        <tr class="print-items">
+            <td colspan="2"><i class="fa-solid fa-print"></i>Print bill</td>
+            <td class="proceed">Proceed to payment</td>
+        </tr>
+    </table>
+    <div class="catlog-hidden">
+        <div class="catalog">
+            <h2>Catalog</h2>
+            <div class="icon-containers">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <i class='bx bx-x' style="font-size: 40px; left: 10px;"></i>
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>All</td> <td>Favourite</td> <td>Burger</td> <td>Sandwich</td> <td>Juice</td>
+                </tr>
+            </table>
+        </div>
+        <div class="food-list">
+            <div class="food-items">
+                <!-- Row 1 -->
+                <div class="food-card">
+                    <img src="pizza-image.jpeg" alt="Chicken BBQ pizza" class="food-image">
+                    <div class="food-info">
+                        <h4>Chicken BBQ pizza</h4>
+                        <p>2 variants</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <div class="food-card">
+                    <img src="fries-image.jpeg" alt="French fries combo" class="food-image">
+                    <div class="food-info">
+                        <h4>French fries combo</h4>
+                        <p>1 variant</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <div class="food-card">
+                    <img src="pan-image.webp" alt="Pan Pizza" class="food-image">
+                    <div class="food-info">
+                        <h4>Pan Pizza</h4>
+                        <p>2 variants</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <!-- Row 2 -->
+                <div class="food-card">
+                    <img src="crispy-mushroom-sandwich-SI-3.jpg" alt="Mushroom Sandwich" class="food-image">
+                    <div class="food-info">
+                        <h4>Mushroom Sandwich</h4>
+                        <p>3 variants</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <div class="food-card">
+                    <img src="Fresh-watermelon-juice-recipe.jpg" alt="Watermelon Juice" class="food-image">
+                    <div class="food-info">
+                        <h4>Watermelon Juice</h4>
+                        <p>2 variants</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <div class="food-card">
+                    <img src="images.jpeg" alt="Plain nachos" class="food-image">
+                    <div class="food-info">
+                        <h4>Club Sandwich</h4>
+                        <p>2 variants</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <!-- Row 3 -->
+                <div class="food-card">
+                    <img src="images (1).jpeg" alt="Mexican Nachos" class="food-image">
+                    <div class="food-info">
+                        <h4>Mexican Nachos with Salad</h4>
+                        <p>2 variants</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <div class="food-card">
+                    <img src="Black-Grape-Juice.jpg" alt="Grape Juice" class="food-image">
+                    <div class="food-info">
+                        <h4>Grape Juice</h4>
+                        <p>1 variant</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+        
+                <div class="food-card">
+                    <img src="images (2).jpeg" alt="Mango Juice" class="food-image">
+                    <div class="food-info">
+                        <h4>Mango Juice</h4>
+                        <p>3 variants</p>
+                    </div>
+                    <span class="info-icon">&#9432;</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+
+    </div>
+    <div class="text-to-display">
+        This is the content that will show up when you click a food image.
+    </div>
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@6.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@6.0.0/dist/ionicons/ionicons.js"></script>
+<script src="foodcart.js"></script>
+</html>
