@@ -564,6 +564,7 @@ tfoot span{
     position: relative;
     left: 8px;
     top: 8px;
+    height: 100%;
 }
 .text-header{
     display: flex;
@@ -607,4 +608,130 @@ tfoot span{
 .image-main-container p{
     position: relative;
     left: 40px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tab-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Variant options */
+.variant-section {
+    margin-bottom: 20px;
+}
+
+.variant-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.variant-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.variant-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.variant-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.variant-option .price {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.variant-option:hover {
+    background-color: #f9f9f9;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.total-price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.total-price .price {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #ccc;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.add-to-order-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-order-btn:hover {
+    background-color: #0056b3;
 }
